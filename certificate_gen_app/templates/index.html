@@ -48,7 +48,7 @@
                     </div>
                     <div class="mb-3">
                         {% if participant%}
-                        <button type="button" class="btn btn-success">Mail</button>
+                        <a href="{% url 'send_mail' %}" class="btn btn-success">Mail</a>
                         {% else %}
                         <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                             data-bs-target="#staticBackdrop">Add Template</button>
